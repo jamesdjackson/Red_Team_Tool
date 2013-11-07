@@ -9,7 +9,7 @@
     <title>Red Team's Tool</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/brownTheme.css" />
+    <link rel="stylesheet" href="css/BlueTheme.css" />
     <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
     <script src="js/libs/jquery-1.10.2.min.js"></script>
     <script src="js/libs/jquery.mobile-1.3.2.min.js"></script>
@@ -19,12 +19,12 @@
 
 <div data-role="page" id="splash">
     <div data-role="header" data-theme="b" data-position="fixed">
-        <a href="#hoverMenu" data-rel="popup" data-role="button" data-inline="true" class="ui-btn-right">Options</a>
+        <a href="#hoverMenu" data-rel="popup" data-role="button" data-inline="true" class="ui-btn-right">Menu</a>
     </div>
 
     <div data-role="popup" id="hoverMenu" data-theme="a" data-history="false">
         <ul data-role="listview" data-inset="true" style="max-height:180px" data-theme="b">
-            <li data-role="divider" data-theme="a">Job Options</li>
+            <li data-role="divider" data-theme="a">Menu</li>
             <li><a href="#newJob" data-transition="slideup" data-icon="info">New Job</a></li>
             <li><a href="#JobByCategory" data-transition="pop" data-icon="info">By Category</a></li>
             <li><a href="about.html" data-transition="slideup" data-icon="info">About</a></li>
@@ -48,7 +48,7 @@
 <div data-role="page" id="JobByCategory">
 
     <div data-role="header" data-theme="b" data-position="fixed">
-        <a href="#hoverMenu" data-rel="popup" data-role="button" data-inline="true" class="ui-btn-right">Options</a>
+        <a href="#hoverMenu" data-rel="popup" data-role="button" data-inline="true" class="ui-btn-right">Menu</a>
     </div>
 
     <div data-role="popup" id="hoverMenu" data-theme="a" data-history="false">
@@ -74,7 +74,6 @@
             <ul>
                 <li><a href="#splash" data-transition="pop" data-icon="home">Splash</a></li>
                 <li><a href="#newJob" data-icon="plus">New Jobs</a></li>
-                <li><a href="#JobByCategory" data-transition="pop" data-icon="info">By Category</a></li>
                 <li><a href="about.html" data-transition="slideup" data-icon="info">About</a></li>
             </ul>
         </div>
@@ -82,9 +81,7 @@
 
 </div>
 
-<div data-role="page" id="JobDataItems"
-<div data-role="content">
-
+<div data-role="page" id="JobDataItems">
     <div data-role="header" data-theme="b">
         <h1></h1>
         <a href="#hoverMenu" data-rel="popup" data-role="button" data-inline="true" class="ui-btn-right">Menu</a>
@@ -97,7 +94,7 @@
         </ul>
     </div>
     <div data-role="content" id="localStorageDisplay"></div>
-    <div data-role="footer" data-theme="a">
+    <div data-role="footer" data-theme="a" data-position="fixed">
         <div data-role="navbar" data-iconpos="top">
             <ul>
                 <li><a href="#" id="clearData" data-transition="pop" data-icon="minus">Clear Data</a></li>
@@ -153,7 +150,7 @@
                                     <label for="zipcode">Zip Code:*</label><input type="text"  id="zipcode" name="zipcode" class="required digits" required aria-required="true" placeholder="20755"/>
                                 </div>
                                 <div class='ui-block-b' id="clientPhone">
-                                    <label for="phone">Phone: <span>*</span></label><input type="tel"  id="phone" name="phone" class="required phoneUS" required aria-required="true" placeholder="000-000-0000"/>
+                                    <label for="phone">Phone:*</label><input type="tel"  id="phone" name="phone" class="required phoneUS" required aria-required="true" placeholder="000-000-0000"/>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +158,7 @@
                             <label for="email">Email:*</label><input type="email"  id="email" name="email" class="required email" required aria-required="true" placeholder="someone@gmail.com"/>
                         </div>
                         <div data-role="fieldcontain" >
-                            <label for="JobDate">Job Date:*</label><input type=date id="JobDate" name="JobDate" class="required date" placeholder="19760110" required aria-required="true" />
+                            <label for="JobDate">Job Date:*</label><input type=date id="JobDate" name="JobDate" class="required date" placeholder="1976-01-10" required aria-required="true" />
                         </div>
                         <div data-role="fieldcontain" >
                             <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
